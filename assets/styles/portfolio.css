@@ -25,10 +25,6 @@
   z-index: -1;
 }
 
-#portfolio .section-title {
-  margin-top: 110px;
-}
-
 .loader {
   margin: 40px auto;
   border: 20px solid rgb(107, 27, 105);
