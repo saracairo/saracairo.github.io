@@ -1,0 +1,199 @@
+#contacts {
+  background-image: url(../images/geometric-art-7433559_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacts::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 70%;
+  z-index: -1;
+}
+
+#contacts .section-title {
+  margin-top: 110px;
+}
+
+#contacts h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+
+/* -- Social Media Row and Direct Contacts -- */
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 700px;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 20px 8px 20px;
+}
+
+.direct-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  padding: 30px 20px;
+}
+
+.direct-column-1 {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+.direct-column-1 p {
+  font-size: 15px;
+}
+.direct-column-1 h2 {
+  margin-top: 2px;
+  margin-bottom: 23px;
+}
+
+.my-email,
+.my-number {
+  color: rgb(255, 185, 231);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-top: 19px;
+}
+
+.fa-brands,
+.fa-envelope {
+  color: rgb(255, 117, 207);
+}
+
+/* -- End Social Media Row and Direct Contacts -- */
+
+
+/* -- Form -- */
+
+.direct-column-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 45px;
+}
+
+.direct-column-2 textarea {
+  box-sizing: border-box;
+  height: 35px;
+  width: 100%;
+  font-size: 15px;
+  padding: 6px;
+  resize: none;
+  margin-bottom: 8px;
+}
+
+.direct-column-2 label {
+  font-size: 16px;
+  color: rgb(255, 117, 207);
+  padding: 2px 0;
+}
+
+.send-button {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 10px;
+  color: rgb(255, 117, 207);
+  background-color: transparent;
+  border: 2px solid rgb(255, 117, 207);
+  width: 120px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  transition: .3s ease background-color;
+  transition-property: background-color, color;
+}
+.send-button:hover {
+  color: white;
+  background-color: rgb(255, 117, 207);
+}
+.send-button:active {
+  background-color: rgba(255, 117, 207, 0.657);
+}
+
+/* -- End Form -- */
+
+
+/* -- Media Queries -- */
+
+/* Tablet */
+@media (max-width: 666px) {
+  .contacts-container {
+    width: 100%
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .social-section {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px
+  }
+
+  .direct-section {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .direct-section h2 {
+    margin-bottom: 10px;
+  }
+
+  .direct-column-1 {
+    align-items: center;
+  }
+
+  .direct-column-2 {
+    margin: 0;
+    padding: 5px 20px 20px 20px;
+  }
+
+  .send-button {
+    align-self: center;
+  }
+  
+  .send-button:active {
+    background-color: rgb(255, 117, 207);
+    color: white;
+  }
+}
+
+/* -- End Media Queries -- */

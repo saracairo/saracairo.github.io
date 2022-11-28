@@ -1,0 +1,231 @@
+#skills {
+  background-image: url(/assets/images/crash-bandicoot-coco-bandicoot.gif);
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.87);
+}
+
+#skills .section-title {
+  padding: 0;
+  margin-left: 20px;
+}
+
+
+/* -- Stats -- */
+
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+}
+
+.stats-card {
+  opacity: 80%;
+  margin: 120px 60px;
+  width: 600px;
+  height: 100%;
+}
+
+.stats-rows-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 0;
+}
+
+.program-lang-icon {
+  height: 45px;
+  width: 45px;
+  margin-right: 19px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 117, 207);
+  background-color: rgb(255, 117, 207);
+  padding: 4px;
+}
+
+.css-icon {
+  padding: 0;
+}
+
+.animated-progress {
+  border: 2px solid rgb(255, 117, 207);
+  width: 100%;
+  height: 45px;
+  padding: 7px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  height: 100%;
+  width: 0;
+  background-color: rgb(255, 117, 207);
+
+  font-size: 23px;
+  font-weight: 300;
+  color: black;
+  text-align: right;
+}
+
+.sass-bar {
+  animation: loadSass 3s normal forwards;
+}
+
+.js-bar {
+  animation: loadJS 3s normal forwards;
+}
+
+.py-bar {
+  animation: loadPy 3s normal forwards;
+}
+
+/* -- End Stats -- */
+
+
+/* -- Upgrading Loader -- */
+
+.upgrading-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 370px;
+  padding: 0 20px;
+}
+
+.skills-loader {
+  padding: 20px;
+  border: 18px solid rgb(139, 36, 135);
+  border-radius: 50%;
+  border-top: 18px solid rgb(255, 117, 207);
+  width: 70px;
+  height: 70px;
+  animation: spinner 4s linear infinite;
+}
+
+.upgrading-letters-box {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.upgrading-letters {
+  color: rgb(255, 117, 207);
+  font-size: 25px;;
+  display: inline-block;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  transform: translateY(-50%);
+  animation:
+    typewriter 1s steps(20, end) forwards;
+}
+
+/* -- End Upgrading Loader -- */
+
+
+/* -- Keyframes -- */
+
+/* Typing Animation */
+
+.anim-typewriter {
+  animation:
+    typewriter 3s steps(23) 1s infinite normal both,
+    blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+@keyframes spinner {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes typewriter {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blinkTextCursor {
+  from {border-color: transparent}
+  to {border-color: rgb(255, 117, 207)}
+}
+
+
+/* Progress Bar Animation */
+
+@keyframes load {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
+
+@keyframes loadSass {
+  0% {width: 0;}
+  100% {width: 90%;}
+}
+
+@keyframes loadJS {
+  0% {width: 0;}
+  100% {width: 75%;}
+}
+
+@keyframes loadPy {
+  0% {width: 0;}
+  100% {width: 85%;}
+}
+/* -- End Keyframes -- */
+
+
+/* -- Media Queries -- */
+
+/* Mobile */
+@media (max-width: 500px) {
+  #skills .section-title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+ .stats-card {
+  width: 370px;
+  margin: 5px;
+ }
+}
+
+/* -- End Media Queries -- */

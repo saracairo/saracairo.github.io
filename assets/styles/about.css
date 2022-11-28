@@ -1,0 +1,123 @@
+#about {
+  background-image: url(../images/geometric-art-7433559_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+#about::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 70%;
+  z-index: -1;
+}
+
+#about .section-title {
+  margin-top: 110px;
+}
+
+
+/* -- Photo & Bio -- */
+
+.id-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+  padding: 40px;
+}
+
+.id-card p {
+  font-size: 19px;
+  color: white;
+  text-align: left;
+}
+
+.my-photo {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.bio-container {
+  padding: 50px 30px;
+  width: 350px;
+}
+
+/* -- End Photo & Bio -- */
+
+
+/* -- Skills Button -- */
+
+.coding-skills-button {
+  display: inline-block;
+  padding: 10px 30px;
+  color: rgb(255, 117, 207);
+  background-color: transparent;
+  border: 2px solid rgb(255, 117, 207);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 36px;
+  transition: .3s ease background-color;
+  transition-property: background-color, color;
+}
+.coding-skills-button:hover {
+  color: white;
+  background-color: rgb(255, 117, 207);
+}
+.coding-skills-button:active {
+  background-color: rgba(255, 117, 207, 0.657);
+}
+
+/* -- End Skills Button -- */
+
+
+/* -- Media Queries -- */
+
+/* Mobile */
+@media (max-width: 500px) {
+
+  .id-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .id-card p {
+    text-align: center;
+  }
+
+  .my-photo {
+    width: 100px;
+    margin: 0;
+  }
+
+  .bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+  }
+
+  .coding-skills-button:active {
+    background-color: rgb(255, 117, 207);
+    color: white;
+  }
+}
+
+/* -- End Media Queries -- */

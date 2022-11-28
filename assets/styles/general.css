@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 10px;
+  font-family: 'Play', sans-serif;
+
+/*
+  OPTIONAL FONT:
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Audiowide', cursive;
+  
+  (in html header:)
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap"
+        rel="stylesheet"> 
+*/
+}
+
+body {
+ background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* -- Website Titles -- */
+
+.section-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: rgb(255, 117, 207);
+  font-size: 36px;
+}

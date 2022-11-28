@@ -1,0 +1,194 @@
+#hero {
+  background-image: url(../images/industry-3296123_1920.jpg);
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 10%;
+  z-index: -1;
+}
+
+#hero h1 {
+  font-size: 4rem;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* -- Typing Text -- */
+
+.typing-container {
+  padding: 100px 30px 100px 100px;
+}
+
+.line-1 {
+  color: white;
+  display: block;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation:
+    typing 1s steps(20, end) forwards;
+}
+
+.line-2 {
+  color: white;
+  display: block;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation:
+    typing 1s steps(20, end) forwards;
+  animation-delay: 1s;
+}
+
+.line-3 {
+  color:rgb(255, 117, 207);
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  display: block;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation:
+    typingSara 2s steps(23, end) forwards;
+  animation-delay: 2s;
+}
+
+/* -- End Typing Text -- */
+
+
+/* -- Skills Button -- */
+
+.coding-skills-button {
+  display: inline-block;
+  padding: 10px 30px;
+  color: rgb(255, 117, 207);
+  background-color: transparent;
+  border: 2px solid rgb(255, 117, 207);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 36px;
+  transition: .3s ease background-color;
+  transition-property: background-color, color;
+}
+
+.coding-skills-button:hover {
+  color: white;
+  background-color: rgb(255, 117, 207);
+}
+
+.coding-skills-button:active {
+  background-color: rgba(255, 117, 207, 0.657);
+}
+
+/* -- End Skills Button -- */
+
+
+/* -- Keyframes -- */
+
+.anim-typing-sara {
+  animation:
+    typingSara 2s steps(8) 2s normal both,
+    blinkTextCursor 600ms steps(20) infinite normal;
+}
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes typingSara {
+  from {width: 0}
+  to {width: 43%}
+}
+
+@keyframes blink {
+  from {border-color: transparent}
+  to {border-color: white}
+}
+
+@keyframes typewriter {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blinkTextCursor {
+  from {border-color: transparent}
+  to {border-color: rgb(255, 117, 207)}
+}
+
+/* -- End Keyframes -- */
+
+
+/* -- Media Queries -- */
+
+/* Tablet */
+@media (max-width: 968px) {
+  #hero {
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .coding-skills-button {
+    color: white;
+    background-color: rgb(255, 117, 207);
+    border: 2px solid rgb(255, 117, 207);
+  }
+
+  .coding-skills-button:active {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  #hero {
+    background-position: 55% 73%;
+    background-size: auto;
+  }
+
+  .typing-container {
+    padding: 40px;
+  }
+
+  .coding-skills-button {
+    color: rgb(255, 117, 207);
+    background-color: transparent;
+    border: 2px solid rgb(255, 117, 207);
+  }
+  
+  .coding-skills-button:active {
+    background-color: rgb(255, 117, 207);
+    color: white;
+  }
+}
+
+/* -- End Media Queries -- */
