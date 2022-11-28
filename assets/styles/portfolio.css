@@ -6,8 +6,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
   z-index: 1;
   min-height: 100vh;
   width: 100%;
@@ -27,14 +27,6 @@
 
 #portfolio .section-title {
   margin-top: 110px;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 55px;
 }
 
 .loader {
