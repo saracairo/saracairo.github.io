@@ -87,18 +87,17 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
   margin-top: 19px;
 }
 
 .fa-brands {
   color: rgb(255, 117, 207);
-  margin: 5px;
+  margin: 15px;
 }
 
 .fa-envelope {
   color: rgb(255, 117, 207);
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 /* -- End Social Media Row and Direct Contacts -- */
@@ -170,7 +169,6 @@
   .social-section {
     width: 100%;
     flex-direction: column;
-    gap: 20px
   }
 
   .direct-section {
