@@ -91,9 +91,14 @@
   margin-top: 19px;
 }
 
-.fa-brands,
+.fa-brands {
+  color: rgb(255, 117, 207);
+  margin: 5px;
+}
+
 .fa-envelope {
   color: rgb(255, 117, 207);
+  margin-right: 5px;
 }
 
 /* -- End Social Media Row and Direct Contacts -- */
