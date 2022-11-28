@@ -171,6 +171,10 @@
     flex-direction: column;
   }
 
+  .social-section h2 {
+    margin-bottom: 20px;
+  }
+
   .direct-section {
     width: 100%;
     flex-direction: column;
@@ -188,6 +192,16 @@
     margin: 0;
     padding: 5px 20px 20px 20px;
   }
+
+  .fa-brands {
+    color: rgb(255, 117, 207);
+    margin: 25px;
+  }
+  
+  .fa-envelope {
+    color: rgb(255, 117, 207);
+    margin-right: 25px;
+  }  
 
   .send-button {
     align-self: center;
