@@ -8,7 +8,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(126, 60, 124, 0.7);
+  background-color: rgba(126, 60, 124, 0.6);
   transition: 0.3s;
 }
 
@@ -177,6 +177,10 @@ header {
 
 /* Mobile */
 @media (max-width: 500px) {
+  header {
+    background-color: rgba(97, 41, 96, 0.823);
+  }
+  
   .nav-bar {
     padding: 0 40px;
   }
