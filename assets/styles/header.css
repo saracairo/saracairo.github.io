@@ -178,7 +178,7 @@ header {
 /* Mobile */
 @media (max-width: 500px) {
   header {
-    background-color: rgba(97, 41, 96, 0.823);
+    background-color: rgba(97, 41, 96, 0.890);
   }
   
   .nav-bar {
