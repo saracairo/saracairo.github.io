@@ -152,16 +152,19 @@
   }
 
   .social-section h2 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 
   .direct-section {
     width: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .direct-section h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .form-container {
@@ -176,7 +179,8 @@
   }
 
   .send-button {
-    align-self: center;
+    display: table;
+    margin: 10px auto;
   }
   
   .send-button:active {
