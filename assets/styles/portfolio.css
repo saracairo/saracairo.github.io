@@ -25,6 +25,16 @@
   z-index: -1;
 }
 
+#portfolio h1 {
+  margin-bottom: 50px;
+}
+
+#portfolio p {
+  color: rgb(255, 117, 207);
+  font-size: 25px;
+  text-align: center;
+}
+
 .loader {
   margin: 40px auto;
   border: 20px solid rgb(107, 27, 105);

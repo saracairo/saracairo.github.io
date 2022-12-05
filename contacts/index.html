@@ -34,7 +34,7 @@
         <!-- Logo -->
         <div class="logo">
           <a href="../index.html">
-            <i class="fa-icon fa-solid fa-terminal fa-6x"></i>
+            <i class="fa-icon fa-solid fa-terminal fa-6x" alt="terminal icon"></i>
             <div class="name-container">
               <div class="name"><span>S</span>ara <span>C</span>airo</div>
               <div class="job">Full Stack Developer.</div>
@@ -61,58 +61,53 @@
 
     <!-- Contacts Section -->
     <section id="contacts">
+      
       <h1 class="section-title"><span>C</span>ontacts</h1>
-
       <div class="contacts-container">
 
         <div class="social-section">
           <h2>Find me on:</h2>
-          <a class="github-link" href="https://github.com/saracairo">
+          <a class="github-link" rel="noopener" target="_blank" href="https://github.com/saracairo">
             <i class="fa-brands fa-github fa-3x"></i>
           </a>
-          <a class="linkedin-link" href="https://www.linkedin.com/in/sara-cairo/">
+          <a class="linkedin-link" rel="noopener" target="_blank" href="https://www.linkedin.com/in/sara-cairo/">
             <i class="fa-brands fa-linkedin-in fa-3x"></i>
           </a>
-          <a class=instagram-link href="https://www.instagram.com/scar.wave/">
+          <a class=instagram-link rel="noopener" target="_blank" href="https://www.instagram.com/scar.wave/">
             <i class="fa-brands fa-instagram fa-3x"></i>
           </a>
-          <a class=facebook-link href="https://www.facebook.com/saracairo1991/">
+          <a class=facebook-link rel="noopener" target="_blank" href="https://www.facebook.com/saracairo1991/">
             <i class="fa-brands fa-facebook fa-3x"></i>
           </a>
-          <a class="twitter-link" href="https://twitter.com/saralien23">
+          <a class="twitter-link" rel="noopener" target="_blank" href="https://twitter.com/saralien23">
             <i class="fa-brands fa-twitter fa-3x"></i>
           </a>
-          <a class="reddit-link" href="https://www.reddit.com/user/saralien23">
+          <a class="reddit-link" rel="noopener" target="_blank" href="https://www.reddit.com/user/saralien23">
             <i class="fa-brands fa-reddit-alien fa-3x"></i>
           </a>
         </div>
   
         <div class="direct-section">
-          <div class="direct-column-1">
-            <h2>Direct message me:</h2>
-            <div class="my-email">
-              <i class="fa-solid fa-envelope fa-3x"></i>
-              <p>saracairo.dat@gmail.com</p>
-            </div>
-            <!-- <div class="my-number">
-              <i class="fa-brands fa-whatsapp fa-3x"></i>
-              <p></p>
-            </div> -->
-          </div>
-  
+          <h2>Direct message me:</h2>
+
           <!-- Form -->
-          <div class="direct-column-2">
-            <label id="your-name">Name</label>
-            <textarea class="your-name"
+          <div class="form-container">
+
+            <form action="https://formsubmit.co/saracairo.dat@gmail.com"
+            method="POST">
+            <label for="your-name">Name</label>
+            <textarea type="name" name="name" id="your-name"
               placeholder="Enter your name"></textarea>
             <label for="your-email">Email</label>
-            <textarea id="your-email"
+            <textarea type="email" name="email" id="your-email"
               placeholder="Enter your email"></textarea>
             <label for="your-message">Message</label>
-            <textarea id="your-message" type="text"
+            <textarea type="text" name="text" id="your-message" type="text"
               placeholder="Type your message"
               style="height: 130px"></textarea>
-           <button class="send-button">Send</button>
+            <button class="send-button">Send</button>
+            </form>
+
           </div>
         </div>
 
@@ -129,7 +124,7 @@
       <p>Social media and terminal icons by FontAwesome</p>
       <p>Coco Bandicoot gif by Tenor</p>
       <p>Background images by Pixabay</p>
-      <img src="/assets/images/site_icon_favicon.png">
+      <img src="/assets/images/site_icon_favicon.png" alt="pixel me avatar">
 
     </footer>
     <!-- End Footer Section -->
