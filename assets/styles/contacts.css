@@ -164,11 +164,7 @@
     margin-bottom: 10px;
   }
 
-  .direct-column-1 {
-    align-items: center;
-  }
-
-  .direct-column-2 {
+  .form-container {
     margin: 0;
     padding: 5px 20px 20px 20px;
   }
@@ -177,11 +173,6 @@
     color: rgb(255, 117, 207);
     margin: 20px;
   }
-  
-  .fa-envelope {
-    color: rgb(255, 117, 207);
-    margin-right: 15px;
-  }  
 
   .send-button {
     align-self: center;
