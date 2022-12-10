@@ -12,9 +12,10 @@
   justify-content: center;
 }
 
-#skills::before {
+#skills::after {
   content: '';
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,7 +41,6 @@
 }
 
 .stats-card {
-  opacity: 80%;
   margin: 120px 60px;
   width: 600px;
   height: 100%;
