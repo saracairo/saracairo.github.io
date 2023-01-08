@@ -11,6 +11,7 @@
   z-index: 1;
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 #portfolio::after {
@@ -26,11 +27,11 @@
 }
 
 #portfolio h1 {
-  margin-top: 50px;
+  margin-top: 120px;
   margin-bottom: 50px;
 }
 
-#portfolio p {
+.message {
   color: rgb(255, 117, 207);
   font-size: 25px;
   text-align: center;
@@ -48,6 +49,7 @@
 
 .loading-box {
   width: 175px;
+  margin-bottom: 60px;
 }
 
 .loading-letters {
@@ -63,6 +65,55 @@
   transform: translateY(-50%);
   animation:
     typewriter 1s steps(20, end) forwards;
+}
+
+
+/* -- Projects Link --*/
+
+.projects-container > ul {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 30px;
+ align-items: flex-start;
+ justify-content: flex-start;
+ width: 600px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  background-color: rgba(0, 0, 0, 0.447);
+  border: 1px solid rgb(255, 117, 207);
+  width: 300px;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.338);
+}
+
+img {
+  display: block;
+  opacity: 80%;
+  filter: grayscale(40%);
+  border-bottom: 1px solid rgb(255, 117, 207);
+}
+
+.project-preview {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.info {
+  margin: 10px;
+}
+
+.info > p {
+  font-size: 18px;
+  font-weight: 200;
+  color:rgb(200, 200, 200)
 }
 
 

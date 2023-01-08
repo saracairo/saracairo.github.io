@@ -42,3 +42,18 @@ a {
   color: rgb(255, 117, 207);
   font-size: 36px;
 }
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 15px;
+  letter-spacing: .2rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+  color: rgb(255, 117, 207);
+  margin-bottom: 5px;
+  letter-spacing: .1rem;
+}
