@@ -8,7 +8,9 @@
 }
 
 body {
-  background: linear-gradient(to right, #68124e, #20001a);
+  background-image: url(img/bck-grid_sadgirlonline.gif);
+  background-color: rgba(0, 0, 0, 0.651);
+  background-blend-mode: multiply;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -11,14 +11,17 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, #68124e, #20001a);
-}
-
-.container {
+  background-image: url(img/bck-grid_sadgirlonline.gif);
+  background-color: rgba(0, 0, 0, 0.651);
+  background-blend-mode: multiply;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+}
+
+.container {
+  border-radius: 60px 10px;
 }
 
 .calculator-grid {
@@ -28,8 +31,9 @@ body {
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
   border: 2px solid rgb(182, 80, 146);
-  border-radius: 5px;
+  border-radius: 60px 10px;
   background-color: rgb(182, 80, 146);
+  padding: 10px;
 }
 
 .calculator-grid > button {
@@ -40,6 +44,7 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   color: black;
   text-align: center;
+  border-radius: 5px 5px 30px 5px;
 }
 
 .calculator-grid > button:hover {
@@ -54,7 +59,7 @@ body {
   grid-column: span 2;
 }
 
-.output {
+.display {
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, .65);
   border-radius: 5px;
@@ -67,14 +72,15 @@ body {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
+  border-radius: 60px 10px;
 }
 
-.output .previous-operand {
+.display .previous-operand {
   color: rgb(255, 117, 207, .75);
   font-size: 1.5rem;
 }
 
-.output .current-operand {
+.display .current-operand {
   color: rgb(255, 117, 207, .90);
   font-size: 2.5rem;
 }
