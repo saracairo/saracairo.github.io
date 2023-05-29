@@ -207,7 +207,7 @@
 
 @keyframes loadNG {
   0% {width: 0;}
-  100% {width: 95%;}
+  100% {width: 100%;}
 }
 
 @keyframes loadPy {
