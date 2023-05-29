@@ -106,6 +106,10 @@
   animation: loadJS 3s normal forwards;
 }
 
+.ng-bar {
+  animation: loadNG 3s normal forwards;
+}
+
 .py-bar {
   animation: loadPy 3s normal forwards;
 }
@@ -193,17 +197,22 @@
 
 @keyframes loadSass {
   0% {width: 0;}
-  100% {width: 90%;}
+  100% {width: 100%;}
 }
 
 @keyframes loadJS {
   0% {width: 0;}
-  100% {width: 55%;}
+  100% {width: 95%;}
+}
+
+@keyframes loadNG {
+  0% {width: 0;}
+  100% {width: 95%;}
 }
 
 @keyframes loadPy {
   0% {width: 0;}
-  100% {width: 75%;}
+  100% {width: 55%;}
 }
 /* -- End Keyframes -- */
 
