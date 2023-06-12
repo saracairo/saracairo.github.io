@@ -39,7 +39,7 @@
 }
 
 
-/* -- Social Media Row and Direct Contacts -- */
+/* -- Social media and direct contacts -- */
 
 .contacts-container {
   display: flex;
@@ -78,9 +78,6 @@
   color: rgb(255, 117, 207);
   margin: 15px;
 }
-
-
-/* -- End Social Media Row and Direct Contacts -- */
 
 
 /* -- Form -- */
@@ -131,8 +128,6 @@
 .send-button:active {
   background-color: rgba(255, 117, 207, 0.657);
 }
-
-/* -- End Form -- */
 
 
 /* -- Media Queries -- */
@@ -188,5 +183,3 @@
     color: white;
   }
 }
-
-/* -- End Media Queries -- */

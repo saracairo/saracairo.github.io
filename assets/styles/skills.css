@@ -114,8 +114,6 @@
   animation: loadPy 3s normal forwards;
 }
 
-/* -- End Stats -- */
-
 
 /* -- Upgrading Loader -- */
 
@@ -158,8 +156,6 @@
   animation:
     typewriter 1s steps(20, end) forwards;
 }
-
-/* -- End Upgrading Loader -- */
 
 
 /* -- Keyframes -- */
@@ -214,7 +210,6 @@
   0% {width: 0;}
   100% {width: 55%;}
 }
-/* -- End Keyframes -- */
 
 
 /* -- Media Queries -- */
@@ -236,5 +231,3 @@
   margin: 5px;
  }
 }
-
-/* -- End Media Queries -- */

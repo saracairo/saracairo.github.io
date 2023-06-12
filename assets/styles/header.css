@@ -61,8 +61,6 @@ header {
   margin-left: 35px;
 }
 
-/* -- End Logo -- */
-
 
 /* -- Navigation Menu -- */
 
@@ -96,8 +94,6 @@ header {
   padding: 25px 25px 35px 25px;
 }
 
-/* -- End Navigation Menu -- */
-
 
 /* -- Hamburger Menu -- */
 
@@ -116,7 +112,6 @@ header {
   background-color: rgb(255, 183, 230);
 }
 
-/* -- End Hamburger Menu -- */
 
 
 /* -- Media Queries -- */
@@ -170,8 +165,6 @@ header {
    100vw 0 0 rgba(255, 255, 255, 0.03) inset;
    padding: 40px;
   }
-
-  /* -- End Hamburger Menu -- */
 }
 
 

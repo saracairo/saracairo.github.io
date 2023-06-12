@@ -57,8 +57,6 @@
   width: 350px;
 }
 
-/* -- End Photo & Bio -- */
-
 
 /* -- Skills Button -- */
 
@@ -82,8 +80,6 @@
 .coding-skills-button:active {
   background-color: rgba(255, 117, 207, 0.657);
 }
-
-/* -- End Skills Button -- */
 
 
 /* -- Media Queries -- */
@@ -119,5 +115,3 @@
     color: white;
   }
 }
-
-/* -- End Media Queries -- */

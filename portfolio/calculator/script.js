@@ -78,7 +78,7 @@ class Calculator {
       return `${integerDisplay}.${decimalDigits}`
     } else {
       return integerDisplay;
-    }; // se l'utente ha digitato punto e numeri dopo di esso, mostra tutto
+    }; // se l'utente ha digitato punto e numeri dopo di esso, mostrare tutto
   }
 
   // 6. Aggiornare il display durante il calcolo
@@ -88,7 +88,7 @@ class Calculator {
       this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
     } else {
       this.previousOperandTextElement.innerText = "";
-    }; // se l'operatore è presente, mostralo letteralmente come elemento testo alla fine di previousOperand
+    }; // se l'operatore è presente, mostrarlo letteralmente come elemento testo alla fine di previousOperand
   }
 }
 
@@ -103,10 +103,10 @@ const previousOperandTextElement = document.querySelector("[data-previous-operan
 const currentOperandTextElement = document.querySelector("[data-current-operand]");
 
 
-// Impostare il funzionamento delle variabili nell'oggetto Calculator
+// Impostazione funzionamento delle variabili nell'oggetto Calculator
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
 
-// Ogni volta un tasto numero viene premuto, aggiungilo al calcolo e al display
+// Ogni volta che un tasto numero viene premuto, aggiungerlo a calcolo e display
 numberButtons.forEach(button => {
   button.addEventListener("click", () => {
     calculator.appendNumber(button.innerText);
@@ -114,7 +114,7 @@ numberButtons.forEach(button => {
   })
 })
 
-// Ogni volta un nasto operazione viene premuto, aggiungilo al calcolo e al display
+// Ogni volta un tasto operazione viene premuto, aggiungerlo a calcolo e display
 operationButtons.forEach(button => {
   button.addEventListener("click", () => {
     calculator.chooseOperation(button.innerText);
@@ -122,13 +122,13 @@ operationButtons.forEach(button => {
   })
 })
 
-// Quando l'utente preme =, esegui il calcolo
+// Quando l'utente preme =, eseguire calcolo
 equalsButton.addEventListener("click", button => {
   calculator.compute();
   calculator.updateDisplay();
 })
 
-// Quando l'utente preme AC, ripulisci il display
+// Quando l'utente preme AC, ripulire display
 allClearButton.addEventListener("click", button => {
   calculator.clear();
   calculator.updateDisplay();

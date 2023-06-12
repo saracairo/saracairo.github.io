@@ -78,34 +78,75 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center; 
   background-color: rgba(0, 0, 0, 0.447);
   border: 1px solid rgb(255, 117, 207);
   width: 300px;
+  height: 330px;
+  transition: 0.5s ease;
 }
 
 .card:hover {
   background-color: rgba(255, 255, 255, 0.338);
 }
 
-.card img {
-  display: block;
-  opacity: 80%;
-  filter: grayscale(40%);
-  border-bottom: 1px solid rgb(255, 117, 207);
+.img-and-links-container {
+  background-image: url(/assets/images/counter-preview.png);
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background-size: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.links {
+  position: absolute;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(188, 188, 188);
+  background-color: rgba(194, 64, 181, 0.3);
+}
+
+.links a {
+  color: white;
+}
+
+.links a:hover {
+  background-color: rgba(255, 207, 250, 0.3);
+}
+
+.card:hover .links {
+  opacity: 1;
 }
 
 .project-preview {
+  opacity: 80%;
+  filter: grayscale(40%);
+  border-bottom: 1px solid rgb(255, 117, 207);
+  position: absolute;
   width: 100%;
-  height: 150px;
   object-fit: cover;
   object-position: top;
 }
 
 .info {
-  margin: 10px;
+  padding: 10px;
+  width: 100%;
 }
 
 .info > p {
@@ -138,7 +179,6 @@
   to {border-color: rgb(255, 117, 207)}
 }
 
-/* -- End Keyframes -- */
 
 /* -- Media Queries -- */
 
