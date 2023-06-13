@@ -33,6 +33,7 @@
 
 .projects-section-title {
   margin-bottom: 15px;
+  margin-left: 10px;
   font-size: 24px;
   font-weight: 500;
   color: white;
@@ -83,7 +84,7 @@
 
 .projects-container > ul {
  display: grid;
- grid-template-columns: 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr;
  gap: 30px;
  width: 100%;
 }
@@ -254,7 +255,15 @@
 
 
 /* -- Media Queries -- */
-
+/* Tablet */
+@media (max-width: 1010px) {
+  .projects-container > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+  }
+}
 /* Mobile */
 @media (max-width: 660px) {
   .projects-container > ul {
