@@ -98,6 +98,10 @@
   text-align: right;
 }
 
+.java-bar {
+  animation: loadJ 3s normal forwards;
+}
+
 .sass-bar {
   animation: loadSass 3s normal forwards;
 }
@@ -198,7 +202,7 @@
 
 @keyframes loadJS {
   0% {width: 0;}
-  100% {width: 95%;}
+  100% {width: 100%;}
 }
 
 @keyframes loadNG {
@@ -209,6 +213,11 @@
 @keyframes loadPy {
   0% {width: 0;}
   100% {width: 55%;}
+}
+
+@keyframes loadJ {
+  0% {width: 0;}
+  100% {width: 35%;}
 }
 
 
