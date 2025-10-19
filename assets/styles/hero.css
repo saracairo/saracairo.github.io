@@ -1,7 +1,7 @@
 #hero {
-  background-image: url(../images/industry-3296123_1920.jpg);
+  background-image: url(../images/alien_dev.PNG);
   background-size: cover;
-  background-position: 100% 90%;
+  background-position: 90%;
 
   position: relative;
   z-index: 1;
@@ -19,7 +19,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: multiply;
   opacity: 10%;
   z-index: -1;
 }
@@ -104,6 +105,11 @@
 
 .coding-skills-button:active {
   background-color: rgba(255, 117, 207, 0.657);
+}
+
+.footer-credits {
+  color: white;
+  text-decoration: none;
 }
 
 

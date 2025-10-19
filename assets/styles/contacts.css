@@ -131,7 +131,12 @@
 /* Tablet */
 @media (max-width: 666px) {
   .contacts-container {
-    width: 100%
+    width: 100%;
+	margin-bottom: 50px;
+  }
+
+  .section-title {
+	margin-top: 100px;
   }
 }
 

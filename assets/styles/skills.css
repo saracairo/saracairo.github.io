@@ -305,6 +305,7 @@
 @media (max-width: 1090px) {
   .skills-container {
     flex-direction: column;
+	margin-bottom: 50px;
   }
 }
 
@@ -314,6 +315,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+	margin-top: 60px;
   }
 
   .stats-card {
