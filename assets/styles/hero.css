@@ -1,7 +1,7 @@
 #hero {
   background-image: url(../images/industry-3296123_1920.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 100% 90%;
 
   position: relative;
   z-index: 1;

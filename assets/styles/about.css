@@ -25,10 +25,6 @@
   z-index: -1;
 }
 
-#about .section-title {
-  margin-top: 110px;
-}
-
 
 /* -- Photo & Bio -- */
 
@@ -55,6 +51,13 @@
 .bio-container {
   padding: 50px 30px;
   width: 350px;
+}
+
+.bio-container a {
+  font-size: 19px;
+  color:  rgb(255, 117, 207);
+  text-align: left;
+  text-decoration: none;
 }
 
 
