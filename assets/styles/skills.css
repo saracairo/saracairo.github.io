@@ -307,6 +307,10 @@
     flex-direction: column;
 	margin-bottom: 50px;
   }
+
+  .section-title {
+	margin-top: 50px;
+  }
 }
 
 /* Mobile */

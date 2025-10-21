@@ -1,7 +1,7 @@
 #hero {
-  background-image: url(../images/alien_dev.PNG);
+  background-image: url(../images/alien_dev11.JPG);
   background-size: cover;
-  background-position: 90%;
+  background-position: 10%;
 
   position: relative;
   z-index: 1;
@@ -152,7 +152,7 @@
 /* Tablet */
 @media (max-width: 968px) {
   #hero {
-    background-position: bottom;
+    background-position: 10%;
     background-size: cover;
   }
 
@@ -171,7 +171,7 @@
 /* Mobile */
 @media (max-width: 500px) {
   #hero {
-    background-position: 35% 100%;
+    background-position: 30%;
     background-size: auto;
   }
 
