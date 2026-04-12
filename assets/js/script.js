@@ -33,7 +33,7 @@ if (document.body.classList.contains('home-page')) {
         await sleep(delay);
       }
 
-      await sleep(1000);
+      await sleep(line === lines[0] ? 1600 : 1000);
     }
   }
 

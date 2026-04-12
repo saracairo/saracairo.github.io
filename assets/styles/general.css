@@ -78,8 +78,8 @@ a {
 }
 
 .back-btn:hover {
-  color: rgb(160, 240, 180);
-  border-color: rgba(160, 240, 180, 0.5);
+  color: rgb(89, 230, 124);
+  border-color: rgba(89, 230, 124, 0.5);
   background-color: rgba(10, 0, 25, 0.75);
   transform: translateY(-3px);
 }
