@@ -78,7 +78,7 @@
   font-size: 1.5rem;
   font-style: normal;
   color: rgba(255, 183, 230, 0);
-  margin: 8px 0 16px;
+  margin: 8px 0 10px;
   letter-spacing: 0.05rem;
   transition: color 7s ease;
 }
@@ -234,13 +234,14 @@
 
 .alien-frame {
   position: relative;
-  border: 1px solid rgba(89, 230, 124, 0.3);
-  box-shadow:
+  /* border: 5px double rgba(89, 230, 124, 0.7); */
+  /* box-shadow:
     0 0 28px rgba(89, 230, 124, 0.22),
     0 0 70px rgba(89, 230, 124, 0.08),
-    inset 0 0 24px rgba(0, 0, 0, 0.5);
+    inset 0 0 24px rgba(0, 0, 0, 0.5); */
   overflow: hidden;
   max-width: 560px;
+	border-radius: 10px;
 }
 
 .alien-img {
@@ -298,7 +299,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .hero-badges .hero-badge:first-child,
@@ -456,7 +457,7 @@
   .typing-container {
     min-height: 14rem;
     margin-top: 60px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     align-items: center;
     text-align: center;
   }
@@ -466,7 +467,7 @@
   }
 
   .line-2 {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .line-sara {
