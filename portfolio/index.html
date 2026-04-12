@@ -50,7 +50,7 @@
 
         <!-- Nav Menu-->
         <ul class="nav-menu">
-          <li><a href="index.html">Portfolio</a></li>
+          <li class="nav-active"><a href="index.html">Portfolio</a></li>
           <li><a href="../skills">Skills</a></li>
           <li><a href="../about">About</a></li>
           <li><a href="../contacts">Contacts</a></li>
@@ -75,8 +75,15 @@
       <!-- Projects link -->
       <nav class="projects-container">
 
+				<!-- Message -->
+      <p class="message">Section under construction. <br> Come back later!</p>
+      <div class="loader"></div>
+      <div class="loading-box">   
+        <div class="loading-letters anim-typewriter">L o a d i n g . . .</div>
+      </div>
+
         <!-- HTML-CSS-JS Section -->
-        <h2 class="projects-section-title">Pure HTML, CSS & JavaScript projects</h2>
+        <!-- <h2 class="projects-section-title">Pure HTML, CSS & JavaScript projects</h2> -->
         <ul>
 
           <!-- Clock -->
@@ -132,33 +139,46 @@
               <p>A counter shaped like a retrogaming portable console.</p>
             </div>
           </li>
+				</ul>
 
+				<ul>
           <!-- FindaBook -->
-          <!-- <li class="card">
+          <li class="card">
             <div class="img-n-links-container-findabook">
               <div class="links">
-                <a href="https://findab00k.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://b00k-search.netlify.app/" target="_blank" rel="noopener noreferrer">
                   Try it!
                 </a>
-                <a href="https://github.com/saracairo/findabook" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/saracairo/owly-book-search" target="_blank" rel="noopener noreferrer">
                   View Code
                 </a>
               </div>
             </div>
             <div class="info">
               <h3>FindaBook</h3>
-              <p>A books database built with advanced JavaScript to study APIs and JSON responses.</p>
+              <p>A books database built in advanced JavaScript to study APIs and JSON responses.</p>
             </div>
-          </li> -->
+          </li>
+
+					<!-- BetterAir -->
+          <li class="card">
+            <div class="img-n-links-container-betterair">
+              <div class="links">
+                <a href="https://better-4ir.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  Try it!
+                </a>
+                <a href="https://github.com/saracairo/betterair_webapp" target="_blank" rel="noopener noreferrer">
+                  View Code
+                </a>
+              </div>
+            </div>
+            <div class="info">
+              <h3>BetterAir</h3>
+              <p>A web app to monitor air quality and environmental data.</p>
+            </div>
+          </li>
 
         </ul>
-
-		<!-- Message -->
-      <p class="message">Section under construction. <br> Come back later!</p>
-      <div class="loader"></div>
-      <div class="loading-box">   
-        <div class="loading-letters anim-typewriter">L o a d i n g . . .</div>
-      </div>
 
         <!-- Angular Section -->
         <h2 class="projects-section-title">Angular projects</h2>
@@ -217,6 +237,25 @@
               <p>Prototype of a food delivery app.</p>
             </div>
           </li>
+
+					<!-- EcoSaver -->
+          <li class="card">
+            <div class="img-n-links-container-ecosaver">
+              <div class="links">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  Try it!
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  View Code
+                </a>
+              </div>
+            </div>
+            <div class="info">
+              <h3>EcoSaver</h3>
+              <p>App for tracking eco-friendly habits and reducing energy consumption.</p>
+            </div>
+          </li>
+
         </ul>
 
       </nav>
@@ -227,9 +266,14 @@
     <footer>
       <p>&copy 2023 Sara Cairo</p>
       <img src="/assets/images/site_icon_favicon.png" alt="pixel me avatar">
-      <p>Icons by Icons8 & FontAwesome, background images by Pixabay, Coco Bandicoot gif by Tenor.</p>
+      <p>Built with HTML · CSS · JavaScript</p>
     </footer>
     <!-- End Footer Section -->
+
+    <!-- Back Button -->
+    <a href="/" class="back-btn" aria-label="Torna alla home">
+      <i class="back-arrow">&#8592;</i>&nbsp;<i class="fa-solid fa-house"></i>
+    </a>
 
     <!-- JavaScript -->
     <script src="/assets/js/script.js"></script>

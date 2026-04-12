@@ -1,6 +1,7 @@
 #skills {
   /* background-image: url(/assets/images/crash-bandicoot-coco-bandicoot.gif); */
-  background-image: url(/assets/images/cube-7256630_1920.jpg);
+  background-image: url(/assets/images/geometric-art-7433559_1920.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 
@@ -9,6 +10,7 @@
   min-height: 100vh;
   width: 100%;
   display: flex;
+	flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -21,7 +23,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.769);
+  background-color: rgba(10, 0, 25, 0.82);
+	opacity: 0.8;
 }
 
 #skills .section-title {
@@ -35,15 +38,16 @@
 .skills-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
+  align-items: flex-start;
+  max-width: 1400px;
   width: 100%;
   height: 100%;
   padding-top: 50px;
+  gap: 40px;
 }
 
 .stats-card {
-  width: 600px;
+  flex: 0 0 550px;
   height: 100%;
 }
 
@@ -64,13 +68,13 @@
 }
 
 .program-lang-icon {
-  height: 45px;
-  width: 45px;
-  margin-right: 19px;
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
   background-color: transparent;
   border: 2px solid rgb(255, 117, 207);
   background-color: rgb(255, 117, 207);
-  padding: 4px;
+  padding: 3px;
 }
 
 .css-icon {
@@ -84,8 +88,8 @@
 .animated-progress {
   border: 2px solid rgb(255, 117, 207);
   width: 100%;
-  height: 45px;
-  padding: 7px;
+  height: 40px;
+  padding: 6px;
   overflow: hidden;
   position: relative;
   align-items: center;
@@ -97,7 +101,7 @@
   width: 0;
   background-color: rgb(255, 117, 207);
 
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 300;
   color: black;
   text-align: right;
@@ -144,28 +148,35 @@
 }
 
 
-/* -- Left Container -- */
+/* -- Right Container -- */
 
-.left-container {
+.right-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 400px;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
 }
 
 .coco-monitor {
   border: 5px double rgb(255, 117, 207);
   border-radius: 20px;
   padding: 5px;
+  opacity: 0.9;
+  width: 100%;
+  max-width: 500px;
 }
 
 .img-coco {
   height: auto;
+  width: 100%;
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 0 50px rgba(255, 117, 207, 0.851);
   opacity: 80%;
+  display: block;
 }
 
 /* -- Upgrading Loader -- */
@@ -178,6 +189,7 @@
   height: 100%;
   width: 370px;
   padding: 0 20px;
+	margin-top: 20px;
 }
 
 .skills-loader {
@@ -305,11 +317,25 @@
 @media (max-width: 1090px) {
   .skills-container {
     flex-direction: column;
-	margin-bottom: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .stats-card {
+    flex: unset;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .right-container {
+    width: 100%;
+    max-width: 600px;
   }
 
   .section-title {
-	margin-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -319,11 +345,194 @@
     padding: 0;
     margin: 0;
     text-align: center;
-	margin-top: 60px;
+    margin-top: 20px;
   }
 
   .stats-card {
-    width: 370px;
-    margin: 5px;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .upgrading-letters {
+    font-size: 20px;
+  }
+
+  .progress-value {
+    font-size: 14px;
+  }
+
+  .program-lang-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .animated-progress {
+    height: 34px;
+  }
+}
+
+
+/* =========================================
+   FORMAZIONE SECTION
+   ========================================= */
+
+#formazione {
+  position: relative;
+  z-index: 1;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.formazione-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.formazione-container .section-title {
+  margin-bottom: 20px;
+	margin-left: 0 !important;
+}
+
+/* Vertical timeline */
+.formazione-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* Continuous vertical line */
+.formazione-timeline::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 117, 207),
+    rgba(255, 117, 207, 0.2)
+  );
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot on the timeline */
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 117, 207);
+  box-shadow: 0 0 12px rgba(255, 117, 207, 0.7);
+  flex-shrink: 0;
+}
+
+/* Content card */
+.timeline-content {
+  border-left: 2px solid rgba(255, 117, 207, 0.35);
+  padding: 0 0 0 24px;
+}
+
+.timeline-period {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  color: rgb(160, 240, 180);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.timeline-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin: 0 0 4px;
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 117, 207);
+  margin: 0 0 7px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.timeline-tags {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.8;
+  margin-top: 10px;
+  letter-spacing: 0.02em;
+}
+
+/* Tablet */
+@media (max-width: 1090px) {
+  #formazione {
+    padding: 60px 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  #formazione {
+    padding: 50px 20px;
+  }
+
+  .formazione-timeline {
+    padding-left: 30px;
+  }
+
+  .formazione-timeline::before {
+    left: 7px;
+  }
+
+	.formazione-container .section-title {
+		margin-bottom: 30px !important;
+	}
+
+  .timeline-dot {
+    left: -30px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-period {
+    font-size: 11px;
+  }
+
+  .timeline-content h2 {
+    font-size: 18px;
+  }
+
+  .timeline-content h3 {
+    font-size: 14px;
+  }
+
+  .timeline-content p {
+    font-size: 13px;
+  }
+
+  .timeline-tags {
+    font-size: 11px;
   }
 }

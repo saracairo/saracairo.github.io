@@ -18,7 +18,7 @@
     <!-- Fonts Kit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Share+Tech+Mono&display=swap"
           rel="stylesheet">
     
     <!-- Icons Kit -->
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="/assets/styles/footer.css">
 
   </head>
-  <body>
+  <body class="home-page">
 
     <!-- Header Section -->
     <header>
@@ -70,22 +70,90 @@
     <section id="hero">
       <div class="hero-container">
 
-        <div class=" typing-container">
-          <h1 class="line-1">Hello, world.</h1>
-          <h1 class="line-2">My name is</h1>
-          <h1 class="line-3 anim-typing-sara">Sara.</h1>
-          <a href="/skills" type="button" class="coding-skills-button">Coding skills</a>
+        <div class="typing-container">
+          <h1 class="line-1" data-text="Hello, world. Hello, friend." data-delay="60"></h1>
+          <p class="line-2">«Hello, friend? That&apos;s lame. Maybe I should give you a name...»</p>
+          <h1 class="line-3" data-text="My name is" data-delay="70"></h1>
+          <h1 class="line-4 line-sara" data-text="Sara Cairo." data-delay="100"></h1>
+          <span class="typed-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <div class="hero-bottom">
+
+          <div class="hero-visual">
+            <div class="alien-frame">
+							<img src="/assets/images/saracairo_sprite_trbg.gif" class="alien-img" alt="alien developer">
+              <div class="alien-scanlines"></div>
+              <div class="frame-corner frame-corner--tl"></div>
+              <div class="frame-corner frame-corner--tr"></div>
+              <div class="frame-corner frame-corner--bl"></div>
+              <div class="frame-corner frame-corner--br"></div>
+            </div>
+            <div class="hero-badges">
+              <!-- <span class="hero-badge hero-badge--on"><i class="fa-solid fa-terminal fa-xs"></i>&nbsp;FULL STACK</span> -->
+							<span class="hero-badge hero-badge--on">FULL STACK</span>
+              <span class="hero-badge hero-badge--anim" style="--i:0"><i class="fa-solid fa-terminal fa-xs"></i>&nbsp;SOFTWARE</span>
+              <span class="hero-badge hero-badge--anim" style="--i:1"><i class="fa-solid fa-code fa-xs"></i>&nbsp;WEB</span>
+              <span class="hero-badge hero-badge--anim" style="--i:2"><i class="fa-solid fa-mobile-screen fa-xs"></i>&nbsp;MOBILE APPS</span>
+              <span class="hero-badge hero-badge--anim" style="--i:3"><i class="fa-solid fa-gamepad fa-xs"></i>&nbsp;INDIE GAME</span>
+							<span class="hero-badge hero-badge--on"></i>DEVELOPER</span>
+              <!-- <span class="hero-badge hero-badge--on"><i class="fa-solid fa-laptop-code fa-xs"></i>&nbsp;DEVELOPER</span> -->
+            </div>
+          </div>
+
+          <div class="home-nav-container">
+          <p class="home-nav-label">// select_section<span class="cursor">_</span></p>
+          <div class="home-nav-grid">
+
+            <a href="/portfolio" class="home-nav-card">
+              <i class="fa-solid fa-code fa-2x"></i>
+              <div>
+                <h2>Portfolio</h2>
+                <p>Projects &amp; experiments</p>
+              </div>
+              <span class="home-nav-enter">ENTER ›</span>
+            </a>
+
+            <a href="/skills" class="home-nav-card">
+              <i class="fa-solid fa-terminal fa-2x"></i>
+              <div>
+                <h2>Skills</h2>
+                <p>Languages &amp; frameworks</p>
+              </div>
+              <span class="home-nav-enter">ENTER ›</span>
+            </a>
+
+            <a href="/about" class="home-nav-card">
+              <i class="fa-solid fa-user fa-2x"></i>
+              <div>
+                <h2>About</h2>
+                <p>Who's behind the screen</p>
+              </div>
+              <span class="home-nav-enter">ENTER ›</span>
+            </a>
+
+            <a href="/contacts" class="home-nav-card">
+              <i class="fa-solid fa-envelope fa-2x"></i>
+              <div>
+                <h2>Contacts</h2>
+                <p>Let's build something</p>
+              </div>
+              <span class="home-nav-enter">ENTER ›</span>
+            </a>
+
+          </div>
+
         </div>
 
       </div>
-    </section>
+    </section>x
     <!-- End Hero Section -->
 
     <!-- Footer Section -->
     <footer>
       <p>&copy 2023 Sara Cairo</p>
       <img src="/assets/images/site_icon_favicon.png" alt="pixel me avatar">
-      <p>Icons by Icons8 & FontAwesome, background images by Pixabay, Coco Bandicoot gif by Tenor.</p>
+      <p>Built with HTML · CSS · JavaScript</p>
     </footer>
     <!-- End Footer Section -->
 

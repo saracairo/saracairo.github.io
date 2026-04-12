@@ -18,7 +18,27 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(10, 0, 25);
+  background-image: url('/assets/images/geometric-art-7433559_1920.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 0, 25, 0.82);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure all sections sit above the overlay */
+header, footer, section, main {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -26,11 +46,60 @@ a {
 }
 
 
+/* -- Back Button -- */
+
+.back-btn {
+  position: fixed;
+  bottom: 80px;
+  left: 48px;
+  z-index: 999;
+
+  font-size: 22px;
+  color: rgb(255, 117, 207);
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 10px 16px;
+  background-color: rgba(10, 0, 25, 0.55);
+  border: 1px solid rgba(255, 117, 207, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+
+  transition: color 0.25s ease, transform 0.2s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.back-btn:hover {
+  color: rgb(160, 240, 180);
+  border-color: rgba(160, 240, 180, 0.5);
+  background-color: rgba(10, 0, 25, 0.75);
+  transform: translateY(-3px);
+}
+
+.back-arrow {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .back-btn {
+    bottom: 24px;
+    left: 16px;
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+
+  .back-arrow {
+    font-size: 16px;
+  }
+}
+
+
 /* -- Website Titles -- */
 
 .section-title {
   color: white;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: .2rem;
   line-height: 1;
@@ -40,7 +109,7 @@ a {
 
 .section-title span {
   color: rgb(255, 117, 207);
-  font-size: 36px;
+  font-size: 30px;
 }
 
 h2 {
@@ -56,4 +125,24 @@ h3 {
   color: rgb(255, 117, 207);
   margin-bottom: 5px;
   letter-spacing: .1rem;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-title span {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
 }
