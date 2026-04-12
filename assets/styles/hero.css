@@ -84,7 +84,7 @@
 }
 
 .line-2.visible {
-  color: rgba(89, 230, 124, 0.45);
+  color: rgba(89, 230, 124, 0.35);
 }
 
 .line-sara {
@@ -234,7 +234,7 @@
 
 .alien-frame {
   position: relative;
-  border: 1px solid rgba(89, 230, 124, 0.45);
+  border: 1px solid rgba(89, 230, 124, 0.3);
   box-shadow:
     0 0 28px rgba(89, 230, 124, 0.22),
     0 0 70px rgba(89, 230, 124, 0.08),
@@ -275,23 +275,23 @@
 }
 .frame-corner--tl {
 	top: -1px; left: -1px;
-	border-top: 2px solid rgb(89, 230, 124);
-	border-left: 2px solid rgb(89, 230, 124);
+	border-top: 2px solid rgb(89, 230, 124, 0.7);
+	border-left: 2px solid rgb(89, 230, 124, 0.7);
 }
 .frame-corner--tr {
 	top: -1px; right: -1px;
-	border-top: 2px solid rgb(89, 230, 124);
-	border-right: 2px solid rgb(89, 230, 124);
+	border-top: 2px solid rgb(89, 230, 124, 0.7);
+	border-right: 2px solid rgb(89, 230, 124, 0.7);
 }
 .frame-corner--bl {
 	bottom: -1px; left: -1px;
-	border-bottom: 2px solid rgb(89, 230, 124);
-	border-left: 2px solid rgb(89, 230, 124);
+	border-bottom: 2px solid rgb(89, 230, 124, 0.7);
+	border-left: 2px solid rgb(89, 230, 124, 0.7);
 }
 .frame-corner--br {
 	bottom: -1px; right: -1px;
-	border-bottom: 2px solid rgb(89, 230, 124);
-	border-right: 2px solid rgb(89, 230, 124);
+	border-bottom: 2px solid rgb(89, 230, 124, 0.7);
+	border-right: 2px solid rgb(89, 230, 124, 0.7);
 }
 
 .hero-badges {

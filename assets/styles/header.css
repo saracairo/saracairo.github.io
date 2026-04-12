@@ -278,6 +278,10 @@ header {
    }
 
   /* -- End Hamburger Menu -- */
+
+  .nav-menu:has(.nav-active) li:not(.nav-active) a {
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 /* -- End Media Queries -- */
