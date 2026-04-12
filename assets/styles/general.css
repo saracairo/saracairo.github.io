@@ -34,6 +34,8 @@ body::after {
   background-position: center;
   z-index: -1;
   pointer-events: none;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
 }
 
 body::before {
@@ -43,6 +45,8 @@ body::before {
   background-color: rgba(10, 0, 25, 0.82);
   z-index: 0;
   pointer-events: none;
+	will-change: transform;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Ensure all sections sit above the overlay */
