@@ -34,8 +34,8 @@ body::after {
   background-position: center;
   z-index: -1;
   pointer-events: none;
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 body::before {
@@ -45,8 +45,8 @@ body::before {
   background-color: rgba(10, 0, 25, 0.82);
   z-index: 0;
   pointer-events: none;
-	will-change: transform;
-  -webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Ensure all sections sit above the overlay */
