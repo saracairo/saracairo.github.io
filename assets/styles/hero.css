@@ -1,9 +1,4 @@
 #hero {
-  background-image: url(../images/geometric-art-7433559_1920.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-
   position: relative;
   z-index: 1;
   width: 100%;
@@ -11,18 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#hero::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(10, 0, 25, 0.82);
-  z-index: 0;
-  pointer-events: none;
 }
 
 #hero h1 {
@@ -444,12 +427,6 @@
 
 /* Mobile */
 @media (max-width: 500px) {
-  #hero {
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-  }
-
   .hero-container {
     padding: 80px 20px 40px;
   }

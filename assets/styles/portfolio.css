@@ -1,9 +1,4 @@
 #portfolio {
-  background-image: url(../images/geometric-art-7433559_1920.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,18 +8,6 @@
   min-height: 100%;
   width: 100%;
   padding-bottom: 30px;
-}
-
-#portfolio::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(10, 0, 25, 0.82);
-  opacity: 0.8;
-  z-index: -1;
 }
 
 #portfolio h1 {

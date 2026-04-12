@@ -1,9 +1,4 @@
 #contacts {
-  background-image: url(../images/geometric-art-7433559_1920.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  
   position: relative;
   z-index: 1;
   min-height: 100%;
@@ -12,18 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#contacts::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(10, 0, 25, 0.82);
-  opacity: 0.8;
-  z-index: -1;
 }
 
 #contacts h2 {

@@ -1,10 +1,4 @@
 #skills {
-  /* background-image: url(/assets/images/crash-bandicoot-coco-bandicoot.gif); */
-  background-image: url(/assets/images/geometric-art-7433559_1920.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-
   position: relative;
   z-index: 1;
   min-height: 100%;
@@ -13,18 +7,6 @@
 	flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#skills::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10, 0, 25, 0.82);
-	opacity: 0.8;
 }
 
 #skills .section-title {
