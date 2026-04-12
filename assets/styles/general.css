@@ -19,14 +19,21 @@
 
 body {
   background-color: rgb(10, 0, 25);
-  background-image: url('/assets/images/geometric-art-7433559_1920.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   scroll-behavior: smooth;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('/assets/images/geometric-art-7433559_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
 }
 
 body::before {
